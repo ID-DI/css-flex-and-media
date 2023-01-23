@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin-top: 0;
+}
+img {
+    width: 100%;
+}
+.main-content>*:last-child {
+  margin-bottom: 0;
+}
+html {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+/*_________________CSS Reset - END______________*/
+
+/*_________________CSS General_________________*/
+.flex {
+    display: flex;
+}
+.red-box {
+    background-color: rgb(255, 84, 68);
+}
+.purpule-box {
+    background-color:  rgb(170, 45, 182);
+}
+.cyan-box {
+    background-color:  rgb(30, 194, 164);
+}
+.blue-box {
+    background-color:  rgb(39, 139, 224);
+}
+.bgc-lightgrey {
+    background-color: rgb(246, 246, 246);
+}
+.bgc-grey {
+    background-color: rgb(104, 104, 104);
+}
+.bgc-white {
+    background-color: rgb(255, 255, 255);
+}
+.c-white {
+    color: white;
+}
+.txt-upper {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: 700;
+}
+h1,h2,h3 {
+    font-weight: 700;
+}
+h1,h2,h3,h4,p,a {
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: normal;
+    display: inline-block;
+    flex: 0 0 auto;
+    transition: background-color 0.3s ease-out;
+}
+.btn:hover {
+    background-color:rgb(83, 83, 83);
+    box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.62);
+}
+.button {
+    padding: 0.3rem 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.15rem;
+    display: inline-flex;
+    align-items: center;
+    background-color: grey;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.51);
+    transition: background-color 0.3s ease-out;
+}
+.button:hover {
+    background-color: rgb(90, 90, 90);
+}
+.pad-top-btm {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+.active {
+    color: white;
+    background-color: rgb(45, 45, 45);
+    padding: 0.3125rem 0.5rem;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.c-align {
+    text-align: center;
+}
+/*_________________CSS General-END______________*/
+/*_________________CSS NAV_________________*/
+.menu {
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0;
+}
+.navbar {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.2rem;
+    flex: 0 0 auto;
+}
+.menu-right {
+    flex: 0 1 auto;
+}
+.nav-menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-menu li {
+    flex: 0 1 auto;
+    text-align: center;
+}
+.nav-menu li:not(:last-child) {
+    margin-right: 1rem;
+}
+.navbar .nav-menu {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 5rem;
+    box-shadow: 0px 8px 16px 0px rgba(172, 172, 172, 0.2);
+    z-index: 1;
+}
+li a, .dropbtn {
+    display: inline-block;
+    transition:background-color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+.nav-menu li a:hover, .dropdown:hover .dropbtn {
+    color: rgb(150, 144, 144);
+}
+.dropdown-content a {
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    background-color: rgb(214, 214, 214);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-out;
+}
+.hamburger:hover {
+    color: rgb(61, 61, 61);
+}
+/*_________________CSS NAV-end_________________*/
+/*_________________CSS Intro-Page________________*/
+.intro-page {
+    height: calc(100vh - 77px);
+    justify-content: center;
+    align-items: center;
+
+}
+.content {
+    text-align: center;
+    flex: 0 1 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro-page h1 {
+    font-size: 2rem;
+    word-spacing: 0.5rem;
+}
+.content .btn:not(a) {
+    font-weight: bold;
+}
+.content .btn {
+    margin-top: 3.125rem;
+}
+.intro-page .content h4 {
+    margin-bottom: 0;
+}
+/*_______________CSS Intro-Page-END_______________*/
+/*_________________CSS BOX________________*/
+.box {
+    display: flex;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.box .box-size {
+    flex: 0 1 25%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    text-align:center;
+    border-radius: 0.3125rem;
+    box-shadow: 0.8rem 0.8rem 1.3rem -2px rgba(0,0,0,0.51);
+}
+.box .box-size p {
+    flex: 0 1 auto;
+    color: white;
+}
+.box .box-size:not(:last-child) {
+    margin-right: 2rem;
+}
+.box .box-size .small {
+    font-size: 0.8rem;
+}
+.box .box-size .large {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+/*_________________CSS BOX-end________________*/
+
+/*_________________CSS DEMO________________*/
+/*_________________CSS Buttons________________*/
+.content-section {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content-section h2{
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0%;
+}
+.content-section .buttons-menu {
+    display: inline-block;
+    flex: 0 0 auto;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.content-section .buttons-menu a:not(:first-child) {
+    padding: 0.25rem 0.5rem;
+    flex: 0 1 auto;
+    background-color: rgb(206, 204, 204);
+    transition: background-color 0.3s ease-in-out;
+}
+.content-section .buttons-menu a:not(:first-child):hover {
+    background-color: rgb(158, 158, 158);
+}
+.content-section a:first-child {
+    color: white;
+}
+.active.button {
+    background-color: black;
+}
+ /*_________________CSS Buttons-END_______________*/
+
+ /*_________________CSS img-section_______________*/
+.boxes-wrapper {
+    flex-wrap: wrap;
+    margin-right: -3rem;
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+}
+.boxes-wrapper .box-item {
+    flex: 0 1 33.3333%; 
+}
+.boxes-wrapper .box-item:nth-child(n+4) .item-inner {
+    margin-top: 3rem;
+}
+.boxes-wrapper .box-item .item-inner {
+    text-align: center;
+    margin-right: 3rem;
+    box-shadow: 0px 0px 10px 1px rgba(49,46,46,0.72);
+    transition: border 0.1s ease-out;
+}
+.boxes-wrapper .box-item .item-inner:hover {
+    border: 0.125rem solid black;
+}
+.box-item h3 {
+    margin-top: 0.25rem;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+}
+.box-item .item-inner a{
+    text-decoration: none;
+}
+ /*_________________CSS img-section-end_______________*/
+ /*_________________CSS img-features______________*/
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 1 auto;
+    text-align: center;
+}
+.header-section h2 {
+    font-size: 2rem;
+}
+.header-section hr {
+    width:10%;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.features-content .list-box {
+    flex: 1 1 33.3333%;
+    line-height: 2.5;
+    font-size: 1.25rem;
+}
+
+.features-content .list-box:nth-child(n+4) {
+margin-top: 2rem;
+}
+.features-content .list-box ul {
+    list-style-image: url("./images/arrow.png");
+    margin-bottom: 0;
+  }
+ /*_________________CSS img-features-END______________*/
+ /*_______________CSS NAV-menu-link-icons______________*/
+
+ footer {
+     background-color: rgb(104, 104, 104);;
+ }
+ .social-icons {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social-icons h3 {
+    flex: 0 0 auto;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.social-icons ul {
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    flex: 0 1 auto;
+}
+.copy-right {
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: space-between;
+    background-color: black;    
+}
+.list-icons {
+    display: flex;
+}
+.list-icons li {
+    flex: 0 0 auto;
+    font-size: 2rem;
+}
+.list-icons li:not(:last-child) {
+margin-right: 1.5rem;
+}
+.list-icons a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box .box-size {
+        flex: 0 1 auto;
+        padding: 5rem 4rem;
+    }
+    .box .box-size:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    .box .box-size .large {
+        font-size: 2rem;
+    }
+    .box .box-size .small {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 426px) {
+    .menu-right  {
+        display: none;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+    .intro-page .content {
+        flex: 0 1 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .box .box-size {
+        flex: 0 1 auto;
+        padding: 2rem 1rem;
+    }
+    .content-section .buttons-menu {
+        flex-wrap: wrap;
+    }
+    .content-section .buttons-menu {
+        width: 100%;
+    }
+    .content-section .buttons-menu a:last-child {
+        margin-top: 1rem;
+    }
+    .boxes-wrapper {
+        flex-direction: column;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .boxes-wrapper:last-child {
+        margin-bottom: 0;
+    }
+    .boxes-wrapper .box-item .item-inner {
+        padding: 0;
+        margin-right: 0;
+    }
+    .boxes-wrapper .box-item:nth-child(n+4) .item-inner {
+        margin-top: 0;
+    }
+   .features-content .noDis-425 {
+       display: none;
+   }
+   .features-content  {
+       font-size: 1rem;
+   }
+   .features-content {
+       justify-content: space-between;
+   }
+   .social-icons li, a {
+       font-size: 1.2rem;
+   }
+   .social-icons h3 {
+       font-size: 1.2rem;
+   }
+   .copy-right small {
+    font-size: 0.5rem;
+   }
+}
